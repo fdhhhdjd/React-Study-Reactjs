@@ -7,16 +7,18 @@ tags {
 .tag1 {
 	outline: none;
 	border: none;
-	color: #eee;
+	color: black;
 	margin: 0px 10px;
 	background-color: transparent;
 	cursor: pointer;
-	
+	float: left;
 }
 
 .active1 {
 	font-weight: bold;
-	border-bottom: 1px solid #eee;
+	border-bottom: 5px solid red;
+	
+
 }
 .container1 {
 	width: 80%;
@@ -24,6 +26,7 @@ tags {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 10px;
+	
 }
 
 .image-card1 {

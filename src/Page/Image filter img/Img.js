@@ -38,7 +38,7 @@ function App() {
   }, [tag]);
 
   return (
-    <div className="App">
+    <div className="">
       <div className="tags1">
         <TagButton
           name="all"
@@ -73,6 +73,7 @@ function App() {
                   className="image1"
                   src={`/images/${image.imageName}`}
                   alt=""
+                  srl_gallery_image="true"
                 />
               </a>
             </div>
