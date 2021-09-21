@@ -1,0 +1,38 @@
+tags {
+	text-align: center;
+	padding: 20px 0px;
+	background-color: rgb(43, 92, 226);
+}
+
+.tag1 {
+	outline: none;
+	border: none;
+	color: #eee;
+	margin: 0px 10px;
+	background-color: transparent;
+	cursor: pointer;
+	
+}
+
+.active1 {
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.container1 {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.image-card1 {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+
+.image1 {
+	width: 100%;
+}
