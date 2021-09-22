@@ -6,6 +6,7 @@ import {
   Header,
   Carousels,
   PaginatorPage,
+  PaginationComponent,
 } from "./Import";
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
             <Carousels />
           </Route>
           <Route path="/paginator">
-            <PaginatorPage />
+            {/* <PaginatorPage /> */}
+            <PaginationComponent />
           </Route>
         </Switch>
       </BrowserRouter>

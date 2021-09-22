@@ -5,3 +5,4 @@ export { default as SearchPart2 } from "../Components/SearchMain/SearchJson/Sear
 export { default as Header } from "../Components/Header/Header";
 export { default as Carousels } from "../Page/CarouselSwiper/Carousels";
 export { default as PaginatorPage } from "../Page/Paginator/PaginatorPage";
+export { default as PaginationComponent } from "../Page/Paginator/Paginator2";

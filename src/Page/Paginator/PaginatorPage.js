@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Pagination } from "antd";
+import "./Paginator.css";
 const PaginatorPage = () => {
   const [post, setPost] = useState([]);
   const [total, setTotal] = useState("");
@@ -41,6 +42,7 @@ const PaginatorPage = () => {
         </>
       ))}
       <Pagination
+        className="Pagination"
         pageSize={postPerPage}
         total={total}
         current={page}
