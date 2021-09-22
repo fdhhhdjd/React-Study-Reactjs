@@ -18,6 +18,8 @@ const Header = () => {
       setSelect("Search__Full");
     } else if (location.pathname === "/carousel") {
       setSelect("Carousel Swiper");
+    } else if (location.pathname === "/paginator") {
+      setSelect("Paginator React");
     }
   }, [location]);
   const options = [
@@ -35,6 +37,11 @@ const Header = () => {
       id: 3,
       name: "Carousel Swiper",
       path: "carousel",
+    },
+    {
+      id: 3,
+      name: "Paginator React",
+      path: "paginator",
     },
   ];
   return (

@@ -4,3 +4,4 @@ export { default as SearchJson } from "../Components/SearchMain/SearchJson/Searc
 export { default as SearchPart2 } from "../Components/SearchMain/SearchJson/SearchPart2";
 export { default as Header } from "../Components/Header/Header";
 export { default as Carousels } from "../Page/CarouselSwiper/Carousels";
+export { default as PaginatorPage } from "../Page/Paginator/PaginatorPage";
