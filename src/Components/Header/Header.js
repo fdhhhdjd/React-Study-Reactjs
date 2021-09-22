@@ -9,25 +9,32 @@ import {
 } from "react-router-dom";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [select, setSelect] = useState("Img__DownLoad--Show");
+  const [select, setSelect] = useState("Choose Item 😛");
   const location = useLocation();
   useEffect(() => {
     if (location.pathname === "/img") {
       setSelect("Img__DownLoad--Show");
     } else if (location.pathname === "/search") {
       setSelect("Search__Full");
+    } else if (location.pathname === "/carousel") {
+      setSelect("Carousel Swiper");
     }
   }, [location]);
   const options = [
     {
       id: 1,
-      name: "Home",
+      name: "Img__Download--Show",
       path: "/img",
     },
     {
       id: 2,
-      name: "AddContact",
+      name: "Full Search",
       path: "search",
+    },
+    {
+      id: 3,
+      name: "Carousel Swiper",
+      path: "carousel",
     },
   ];
   return (

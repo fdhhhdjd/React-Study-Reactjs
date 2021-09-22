@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Switch, BrowserRouter, Route } from "react-router-dom";
-import { SearchMain, ImgFilter, Header } from "./Import";
+import { SearchMain, ImgFilter, Header, Carousels } from "./Import";
 
 function App() {
   return (
@@ -14,6 +13,9 @@ function App() {
           </Route>
           <Route path="/search">
             <SearchMain />
+          </Route>
+          <Route path="/carousel">
+            <Carousels />
           </Route>
         </Switch>
       </BrowserRouter>

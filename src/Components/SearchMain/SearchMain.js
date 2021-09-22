@@ -9,16 +9,16 @@ import {
 import { SearchJson, SearchPart2 } from "../../Import/index";
 import "./SearchMain.css";
 const SearchMain = () => {
-  const [activeTab, setActiveTab] = useState("Home");
+  const [activeTab, setActiveTab] = useState("Search 1");
   const { path, url } = useRouteMatch();
   const location = useLocation();
   useEffect(() => {
     if (location.pathname === `${url}/search1`) {
-      setActiveTab("Home");
+      setActiveTab("Search 1");
     } else if (location.pathname === `${url}/search2`) {
-      setActiveTab("AddContact");
+      setActiveTab("Search 2");
     } else if (location.pathname === `${url}/search3`) {
-      setActiveTab("About");
+      setActiveTab("Search 3");
     }
   }, [location]);
   return (
@@ -32,26 +32,26 @@ const SearchMain = () => {
             <div className="header-right">
               <Link to={`${url}/search1`}>
                 <p
-                  className={`${activeTab === "Home" ? "active" : ""}`}
-                  onClick={() => setActiveTab("Home")}
+                  className={`${activeTab === "Search 1" ? "active" : ""}`}
+                  onClick={() => setActiveTab("Search 1")}
                 >
-                  Home
+                  Search 1
                 </p>
               </Link>
               <Link to={`${url}/search2`}>
                 <p
-                  className={`${activeTab === "AddContact" ? "active" : ""}`}
-                  onClick={() => setActiveTab("AddContact")}
+                  className={`${activeTab === "Search 2" ? "active" : ""}`}
+                  onClick={() => setActiveTab("Search 2")}
                 >
-                  Add Contact
+                  Search 2
                 </p>
               </Link>
               <Link to={`${url}/search3`}>
                 <p
-                  className={`${activeTab === "About" ? "active" : ""}`}
-                  onClick={() => setActiveTab("About")}
+                  className={`${activeTab === "Search 3" ? "active" : ""}`}
+                  onClick={() => setActiveTab("Search 3")}
                 >
-                  About
+                  Search 3
                 </p>
               </Link>
             </div>
