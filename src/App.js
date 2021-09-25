@@ -7,6 +7,8 @@ import {
   Carousels,
   PaginatorPage,
   PaginationComponent,
+  StudyF8,
+  Navbar,
 } from "./Import";
 function App() {
   return (
@@ -26,6 +28,12 @@ function App() {
           <Route path="/paginator">
             {/* <PaginatorPage /> */}
             <PaginationComponent />
+          </Route>
+          <Route path="/studyF8">
+            <StudyF8 />
+          </Route>
+          <Route path="/navbar">
+            <Navbar />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -20,6 +20,10 @@ const Header = () => {
       setSelect("Carousel Swiper");
     } else if (location.pathname === "/paginator") {
       setSelect("Paginator React");
+    } else if (location.pathname === "/studyF8") {
+      setSelect("Study F8");
+    } else if (location.pathname === "/navbar") {
+      setSelect("Navbar");
     }
   }, [location]);
   const options = [
@@ -42,6 +46,16 @@ const Header = () => {
       id: 3,
       name: "Paginator React",
       path: "paginator",
+    },
+    {
+      id: 4,
+      name: "Study F8",
+      path: "studyF8",
+    },
+    {
+      id: 5,
+      name: "Navbar Beautiful",
+      path: "navbar",
     },
   ];
   return (
