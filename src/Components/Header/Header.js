@@ -24,6 +24,8 @@ const Header = () => {
       setSelect("Study F8");
     } else if (location.pathname === "/navbar") {
       setSelect("Navbar");
+    } else if (location.pathname === "/option") {
+      setSelect("Choose Select Options");
     }
   }, [location]);
   const options = [
@@ -56,6 +58,11 @@ const Header = () => {
       id: 5,
       name: "Navbar Beautiful",
       path: "navbar",
+    },
+    {
+      id: 6,
+      name: "Select Option",
+      path: "option",
     },
   ];
   return (

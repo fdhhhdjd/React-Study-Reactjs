@@ -10,6 +10,7 @@ import {
   StudyF8,
   Navbar,
 } from "./Import";
+import Options from "./Page/Options/Options";
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/navbar">
             <Navbar />
+          </Route>
+          <Route path="/option">
+            <Options />
           </Route>
         </Switch>
       </BrowserRouter>
