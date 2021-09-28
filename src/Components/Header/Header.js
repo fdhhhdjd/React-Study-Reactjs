@@ -64,6 +64,11 @@ const Header = () => {
       name: "Select Option",
       path: "option",
     },
+    {
+      id: 7,
+      name: "Choose CheckBox",
+      path: "checkbox",
+    },
   ];
   return (
     <>

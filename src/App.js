@@ -9,6 +9,7 @@ import {
   PaginationComponent,
   StudyF8,
   Navbar,
+  CheckBox,
 } from "./Import";
 import Options from "./Page/Options/Options";
 function App() {
@@ -36,8 +37,8 @@ function App() {
           <Route path="/navbar">
             <Navbar />
           </Route>
-          <Route path="/option">
-            <Options />
+          <Route path="/checkbox">
+            <CheckBox />
           </Route>
         </Switch>
       </BrowserRouter>
