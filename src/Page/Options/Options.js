@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Options = () => {
-  const [state, setState] = useState("");
+  const [state, setState] = useState("hang1");
   const handleChange = (e) => {
     const selectFood = e.target.value;
     setState(selectFood);
