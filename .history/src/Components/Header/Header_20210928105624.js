@@ -69,11 +69,6 @@ const Header = () => {
       name: "Choose CheckBox",
       path: "checkbox",
     },
-    {
-      id: 8,
-      name: "Check From",
-      path: "checkform",
-    },
   ];
   return (
     <>

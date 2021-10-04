@@ -12,7 +12,6 @@ import {
   CheckBox,
 } from "./Import";
 import Options from "./Page/Options/Options";
-import CheckFrom from "./Page/CheckFrom/CheckFrom";
 function App() {
   return (
     <div className="App">
@@ -40,9 +39,6 @@ function App() {
           </Route>
           <Route path="/checkbox">
             <CheckBox />
-          </Route>
-          <Route path="/checkform">
-            <CheckFrom />
           </Route>
         </Switch>
       </BrowserRouter>

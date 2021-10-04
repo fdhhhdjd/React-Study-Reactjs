@@ -1,0 +1,28 @@
+.container{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+.container>.form{
+    width: 70%;
+    border: 1px solid #fff;
+    padding:20px;
+    border-radius:5px;
+    background: #fff;
+}
+.pre{
+    width: 70%;
+    color: #fff;
+    font-size:large
+}
+.button{
+    background: #5063b4;
+
+}
+.p{
+    color: red;
+}
