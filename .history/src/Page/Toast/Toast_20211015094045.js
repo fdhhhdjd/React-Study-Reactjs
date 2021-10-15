@@ -1,0 +1,35 @@
+import { useCallback } from "react";
+import { useEffect } from "react/cjs/react.development";
+import "./toast.css";
+
+const Toast = () => {
+  return (
+    <>
+      <div id="toast">
+        {toastlist.map((toast, i) => (
+          <div key={i}>
+            <div className={`toast ${toast.backgroundColor}`}>
+              <div className="toast__icon">
+                <div className="toast__icon">
+                  <i className="fa fa-check-circle"></i>
+                </div>
+              </div>
+              <div className="toast__body">
+                <h3 className="toast__title ">{toast.title}</h3>
+                <p className="toast__msg">{toast.description}</p>
+              </div>
+              <div className="toast__close">
+                <i
+                  className="fa fa-times"
+                  onClick={() => deleteToast(toast.id)}
+                ></i>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default Toast;
