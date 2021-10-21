@@ -32,6 +32,7 @@ const Toast = ({ toastlist, position, setList, json }) => {
               <div className="toast__icon">
                 <i ref={toast.json}></i>
               </div>
+
               <div className="toast__body">
                 <h3 className="toast__title ">{toast.title}</h3>
                 <p className="toast__msg">{toast.description}</p>
