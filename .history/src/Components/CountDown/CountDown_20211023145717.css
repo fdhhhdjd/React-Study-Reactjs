@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  background: #282937!important;
+  font-family: 'Helvetica', 'Helvetica Nueue', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.app {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fafafa;
+}
+
+.time-circle {
+  width: 100%;
+  max-width: 20rem;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.time-circle::before {
+  border: 3px solid #fafafa;
+  border-radius: 100%;
+  -webkit-animation: 1s linear infinite alternate abberation, 4s linear infinite spin;
+          animation: 1s linear infinite alternate abberation, 4s linear infinite spin;
+  padding-top: 100%;
+  content: "";
+  position: relative;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.time-circle.paused::before {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: 0.3s -webkit-transform;
+  transition: 0.3s -webkit-transform;
+  transition: 0.3s transform;
+  transition: 0.3s transform, 0.3s -webkit-transform;
+}
+
+@-webkit-keyframes abberation {
+  from {
+    -webkit-box-shadow: 0 0 0 0 #CB2918, 0 0 0 0 #56719A;
+            box-shadow: 0 0 0 0 #CB2918, 0 0 0 0 #56719A;
+  }
+  to {
+    -webkit-box-shadow: 0.25rem 0.125rem 0 0 #CB2918, -0.25rem -0.125rem 0 0 #56719A;
+            box-shadow: 0.25rem 0.125rem 0 0 #CB2918, -0.25rem -0.125rem 0 0 #56719A;
+  }
+}
+
+@keyframes abberation {
+  from {
+    -webkit-box-shadow: 0 0 0 0 #CB2918, 0 0 0 0 #56719A;
+            box-shadow: 0 0 0 0 #CB2918, 0 0 0 0 #56719A;
+  }
+  to {
+    -webkit-box-shadow: 0.25rem 0.125rem 0 0 #CB2918, -0.25rem -0.125rem 0 0 #56719A;
+            box-shadow: 0.25rem 0.125rem 0 0 #CB2918, -0.25rem -0.125rem 0 0 #56719A;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.time {
+  padding-top: 1rem;
+  font-size: 5rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.buttons .play-pause {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background: #6C7CB3;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  color: white;
+}
+
+.buttons .play-pause:hover {
+  background: #50619c;
+}
+
+.buttons .reset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: #fafafa;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.buttons .reset:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=CountDown.css.map */

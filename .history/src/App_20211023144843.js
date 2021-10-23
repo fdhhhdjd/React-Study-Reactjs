@@ -11,7 +11,6 @@ import {
   Navbar,
   CheckBox,
   Toasts,
-  CountDown,
 } from "./Import";
 import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
