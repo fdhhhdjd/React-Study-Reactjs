@@ -1,6 +1,6 @@
-/* body {
+body {
   margin: 0;
-  background-color: #282c34!important;
+ 
   font-family: 'Helvetica', 'Helvetica Nueue', sans-serif;
 }
 
@@ -13,7 +13,7 @@ button::-moz-focus-inner {
 }
 
 .app {
-
+ 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -39,7 +39,6 @@ button::-moz-focus-inner {
   position: relative;
   display: -ms-grid;
   display: grid;
-  
 }
 
 .time-circle::before {
@@ -173,4 +172,5 @@ button::-moz-focus-inner {
 .buttons .reset:disabled {
   cursor: not-allowed;
   opacity: 0.6;
-} */
+}
+/*# sourceMappingURL=CountDown.css.map */

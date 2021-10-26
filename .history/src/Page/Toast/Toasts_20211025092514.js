@@ -90,7 +90,7 @@ function Toasts() {
       <h1>React Toast Component</h1>
       <div>
         <Button
-          handleClick={() => showToast("success")}
+          handleClick={() => showToast("success", tit)}
           className="btn-success"
           btn=" btn btn--success"
         >

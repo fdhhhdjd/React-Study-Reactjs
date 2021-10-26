@@ -53,7 +53,7 @@ function App() {
               <CountDown />
             </div>
           </Route>
-          <Route path="/clock">
+          <Route exact path="/clock">
             <ClockCountDown />
           </Route>
           <Route path="/toast">

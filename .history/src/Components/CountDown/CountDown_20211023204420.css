@@ -1,6 +1,6 @@
-/* body {
+body {
   margin: 0;
-  background-color: #282c34!important;
+  background-color: white!important;
   font-family: 'Helvetica', 'Helvetica Nueue', sans-serif;
 }
 
@@ -173,4 +173,5 @@ button::-moz-focus-inner {
 .buttons .reset:disabled {
   cursor: not-allowed;
   opacity: 0.6;
-} */
+}
+/*# sourceMappingURL=CountDown.css.map */

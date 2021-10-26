@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -36,4 +36,6 @@
     transform: rotate(360deg);
   }
 }
- */
+.countdownMain{
+  background-color: #282c34!important;
+}

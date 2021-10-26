@@ -12,7 +12,6 @@ import {
   CheckBox,
   Toasts,
   CountDown,
-  ClockCountDown,
 } from "./Import";
 import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
@@ -52,9 +51,6 @@ function App() {
             <div className="countdownMain">
               <CountDown />
             </div>
-          </Route>
-          <Route path="/clock">
-            <ClockCountDown />
           </Route>
           <Route path="/toast">
             <Toasts />

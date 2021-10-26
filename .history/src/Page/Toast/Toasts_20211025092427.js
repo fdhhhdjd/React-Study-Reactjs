@@ -40,13 +40,13 @@ function Toasts() {
       animationData: require("./warning.json"),
     });
   }, [list]);
-  const showToast = (type, title) => {
+  const showToast = (type) => {
     switch (type) {
       case "success":
         toastProperties = {
           id: list.length + 1,
           title: "Success",
-          description: title,
+          description: `${title}`,
           backgroundColor: "toast--success",
           json: success,
         };
@@ -90,7 +90,7 @@ function Toasts() {
       <h1>React Toast Component</h1>
       <div>
         <Button
-          handleClick={() => showToast("success")}
+          handleClick={() => showToast("success", tit)}
           className="btn-success"
           btn=" btn btn--success"
         >
