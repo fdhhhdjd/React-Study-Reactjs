@@ -12,4 +12,4 @@ export { default as CheckBox } from "../Components/CheckBox/CheckBox";
 export { default as Toasts } from "../Page/Toast/Toasts";
 export { default as CountDown } from "../Components/CountDown/CountDown";
 export { default as ClockCountDown } from "../Page/ClockCounDown/ClockCountDown";
-export { default as Sliders } from "../Components/SliderFull/Sliders";
+export { default as Players } from "../Components/PlayerMusic/Players";

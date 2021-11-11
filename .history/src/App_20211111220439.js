@@ -10,9 +10,14 @@ import {
   StudyF8,
   Navbar,
   CheckBox,
+  Toasts,
+  CountDown,
+  ClockCountDown,
+  Sliders,
 } from "./Import";
 import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
+import Pdf from "./Components/PDF_react/Pdf";
 function App() {
   return (
     <div className="App">
@@ -43,6 +48,20 @@ function App() {
           </Route>
           <Route path="/checkform">
             <CheckFrom />
+          </Route>
+          <Route path="/countdown">
+            <div className="countdownMain">
+              <CountDown />
+            </div>
+          </Route>
+          <Route path="/clock">
+            <ClockCountDown />
+          </Route>
+          <Route path="/toast">
+            <Toasts />
+          </Route>
+          <Route path="/slider">
+            <Sliders />
           </Route>
         </Switch>
       </BrowserRouter>

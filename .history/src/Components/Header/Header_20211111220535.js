@@ -75,9 +75,34 @@ const Header = () => {
       path: "checkform",
     },
     {
-      id: 8,
+      id: 9,
       name: "File PDF React",
       path: "pdf",
+    },
+    {
+      id: 10,
+      name: "Toast React",
+      path: "toast",
+    },
+    {
+      id: 11,
+      name: "Count Down",
+      path: "countdown",
+    },
+    {
+      id: 12,
+      name: "Clock CountDown",
+      path: "clock",
+    },
+    {
+      id: 13,
+      name: "Player Music",
+      path: "music",
+    },
+    {
+      id: 14,
+      name: "Slider Full Stack",
+      path: "slider",
     },
   ];
   return (

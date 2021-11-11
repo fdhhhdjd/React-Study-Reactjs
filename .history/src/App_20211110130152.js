@@ -13,7 +13,7 @@ import {
   Toasts,
   CountDown,
   ClockCountDown,
-  Sliders,
+  Players,
 } from "./Import";
 import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
@@ -60,8 +60,8 @@ function App() {
           <Route path="/toast">
             <Toasts />
           </Route>
-          <Route path="/slider">
-            <Sliders />
+          <Route path="/music">
+            <Players />
           </Route>
         </Switch>
       </BrowserRouter>

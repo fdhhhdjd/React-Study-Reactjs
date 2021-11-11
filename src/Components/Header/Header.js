@@ -94,6 +94,16 @@ const Header = () => {
       name: "Clock CountDown",
       path: "clock",
     },
+    {
+      id: 13,
+      name: "Player Music",
+      path: "music",
+    },
+    {
+      id: 14,
+      name: "Slider Full Stack",
+      path: "slider",
+    },
   ];
   return (
     <>

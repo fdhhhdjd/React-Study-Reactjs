@@ -10,6 +10,9 @@ import {
   StudyF8,
   Navbar,
   CheckBox,
+  Toasts,
+  CountDown,
+  ClockCountDown,
 } from "./Import";
 import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
@@ -45,8 +48,16 @@ function App() {
           <Route path="/checkform">
             <CheckFrom />
           </Route>
-          <Route path="/pdf">
-            <Pdf />
+          <Route path="/countdown">
+            <div className="countdownMain">
+              <CountDown />
+            </div>
+          </Route>
+          <Route path="/clock">
+            <ClockCountDown />
+          </Route>
+          <Route path="/toast">
+            <Toasts />
           </Route>
         </Switch>
       </BrowserRouter>
