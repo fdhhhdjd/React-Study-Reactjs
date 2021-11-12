@@ -18,7 +18,6 @@ import {
 import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
 import Pdf from "./Components/PDF_react/Pdf";
-import UpdateImg from "./Components/UpdateImg/UpdateImg";
 function App() {
   return (
     <div className="App">
@@ -65,7 +64,7 @@ function App() {
             <Sliders />
           </Route>
           <Route path="/updateImg">
-            <UpdateImg />
+            <Sliders />
           </Route>
         </Switch>
       </BrowserRouter>
