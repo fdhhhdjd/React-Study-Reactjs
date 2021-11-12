@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Sliders.css";
 import BtnSlider from "./BtnSlider";
 import dataSlider from "./dataSlider.js";
@@ -24,19 +24,7 @@ const Sliders = () => {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
-  useEffect(() => {
-    const slider = setInterval(() => {
-      if (slideIndex !== length) {
-        setSlideIndex(slideIndex + 1);
-      } else if (slideIndex === length) {
-        setSlideIndex(1);
-      }
-    }, 2000);
-
-    return () => {
-      clearInterval(slider);
-    };
-  }, [slideIndex, length]);
+  console.log(slideIndex, "index");
   return (
     <>
       <div className="container-slider">
@@ -48,7 +36,7 @@ const Sliders = () => {
                 slideIndex === index + 1 ? "slide active-anim" : "slide"
               }
             >
-              <img src={`/Img/img${index + 1}.jpg`} className="hinh" />
+              <img src={`/Img/img${index + 1}.jpg`} />
             </div>
           );
         })}

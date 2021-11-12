@@ -76,7 +76,8 @@
     background: rgb(32, 32, 32);
   }
   .hinh{
-    object-fit:contain !important;
-  
+    object-fit: cover!important;
+    width: 200px!important;
+    height: 300px;
 
   }

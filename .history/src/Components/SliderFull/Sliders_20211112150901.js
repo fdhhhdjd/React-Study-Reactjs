@@ -25,17 +25,13 @@ const Sliders = () => {
     setSlideIndex(index);
   };
   useEffect(() => {
-    const slider = setInterval(() => {
-      if (slideIndex !== length) {
-        setSlideIndex(slideIndex + 1);
-      } else if (slideIndex === length) {
-        setSlideIndex(1);
-      }
-    }, 2000);
+    const slider=setInterval(()=>{
+      setSlideIndex(slideIndex===)
 
-    return () => {
-      clearInterval(slider);
-    };
+    },2000)
+    return()=>{
+      clearInterval(slider)
+    }
   }, [slideIndex, length]);
   return (
     <>

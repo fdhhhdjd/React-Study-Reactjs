@@ -26,11 +26,10 @@ const Sliders = () => {
   };
   useEffect(() => {
     const slider = setInterval(() => {
-      if (slideIndex !== length) {
-        setSlideIndex(slideIndex + 1);
-      } else if (slideIndex === length) {
-        setSlideIndex(1);
-      }
+      const moveDot = (index) => {
+        setSlideIndex(index);
+      };
+      moveDot();
     }, 2000);
 
     return () => {

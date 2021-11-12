@@ -76,7 +76,5 @@
     background: rgb(32, 32, 32);
   }
   .hinh{
-    object-fit:contain !important;
-  
-
+    object-position: cover;
   }
