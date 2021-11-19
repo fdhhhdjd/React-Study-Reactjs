@@ -26,6 +26,8 @@ const Header = () => {
       setSelect("Navbar");
     } else if (location.pathname === "/option") {
       setSelect("Choose Select Options");
+    } else if (location.pathname === "/scrollProgress") {
+      setSelect("Choose Select Options");
     }
   }, [location]);
   const options = [
@@ -83,6 +85,41 @@ const Header = () => {
       id: 10,
       name: "Toast React",
       path: "toast",
+    },
+    {
+      id: 11,
+      name: "Count Down",
+      path: "countdown",
+    },
+    {
+      id: 12,
+      name: "Clock CountDown",
+      path: "clock",
+    },
+    {
+      id: 13,
+      name: "Player Music",
+      path: "music",
+    },
+    {
+      id: 14,
+      name: "Slider Full Stack",
+      path: "slider",
+    },
+    {
+      id: 15,
+      name: "update Image",
+      path: "updateImg",
+    },
+    {
+      id: 16,
+      name: "Start Choose",
+      path: "start",
+    },
+    {
+      id: 17,
+      name: "Scroll Progress",
+      path: "scrollProgress",
     },
   ];
   return (

@@ -26,7 +26,7 @@ const Header = () => {
       setSelect("Navbar");
     } else if (location.pathname === "/option") {
       setSelect("Choose Select Options");
-    } else if (location.pathname === "/scrollProgress") {
+    } else if (location.pathname === "/option") {
       setSelect("Choose Select Options");
     }
   }, [location]);
@@ -115,11 +115,6 @@ const Header = () => {
       id: 16,
       name: "Start Choose",
       path: "start",
-    },
-    {
-      id: 17,
-      name: "Scroll Progress",
-      path: "scrollProgress",
     },
   ];
   return (
