@@ -19,6 +19,7 @@ import CheckFrom from "./Page/CheckFrom/CheckFrom";
 import UpdateImg from "./Components/UpdateImg/UpdateImg";
 import Start from "./Components/Start/Start";
 import ScrollProgress from "./Components/scrollProgress/ScrollProgress";
+import Copy from "./Components/Copy/Copy";
 function App() {
   return (
     <div className="App">
@@ -72,6 +73,9 @@ function App() {
           </Route>
           <Route path="/scrollProgress">
             <ScrollProgress />
+          </Route>
+          <Route path="/copy">
+            <Copy />
           </Route>
         </Switch>
       </BrowserRouter>

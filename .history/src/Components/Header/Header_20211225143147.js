@@ -26,6 +26,10 @@ const Header = () => {
       setSelect("Navbar");
     } else if (location.pathname === "/option") {
       setSelect("Choose Select Options");
+    } else if (location.pathname === "/scrollProgress") {
+      setSelect("Choose Select Options");
+    } else if (location.pathname === "/copy") {
+      setSelect("Copy");
     }
   }, [location]);
   const options = [
@@ -103,6 +107,21 @@ const Header = () => {
       id: 14,
       name: "Slider Full Stack",
       path: "slider",
+    },
+    {
+      id: 15,
+      name: "update Image",
+      path: "updateImg",
+    },
+    {
+      id: 16,
+      name: "Start Choose",
+      path: "start",
+    },
+    {
+      id: 17,
+      name: "Scroll Progress",
+      path: "scrollProgress",
     },
   ];
   return (

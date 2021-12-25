@@ -28,6 +28,8 @@ const Header = () => {
       setSelect("Choose Select Options");
     } else if (location.pathname === "/scrollProgress") {
       setSelect("Choose Select Options");
+    } else if (location.pathname === "/copy") {
+      setSelect("Copy");
     }
   }, [location]);
   const options = [
@@ -120,6 +122,11 @@ const Header = () => {
       id: 17,
       name: "Scroll Progress",
       path: "scrollProgress",
+    },
+    {
+      id: 18,
+      name: "Copy",
+      path: "copy",
     },
   ];
   return (

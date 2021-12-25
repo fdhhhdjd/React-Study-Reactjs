@@ -15,10 +15,11 @@ import {
   ClockCountDown,
   Sliders,
 } from "./Import";
-import Options from "./Page/Options/Options";
 import CheckFrom from "./Page/CheckFrom/CheckFrom";
-import Pdf from "./Components/PDF_react/Pdf";
 import UpdateImg from "./Components/UpdateImg/UpdateImg";
+import Start from "./Components/Start/Start";
+import ScrollProgress from "./Components/scrollProgress/ScrollProgress";
+import Copy from "./Components/Copy/Copy";
 function App() {
   return (
     <div className="App">
@@ -66,6 +67,15 @@ function App() {
           </Route>
           <Route path="/updateImg">
             <UpdateImg />
+          </Route>
+          <Route path="/start">
+            <Start />
+          </Route>
+          <Route path="/scrollProgress">
+            <ScrollProgress />
+          </Route>
+          <Route path="/copy">
+            <Copy />
           </Route>
         </Switch>
       </BrowserRouter>
